@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section Commander's Individual Soldier Load Guide</title>
+    <link rel="stylesheet" href="styles6.css">
+</head>
+
+<body>
+    <header>
+        <p id="guidetitle">Section Commander's Individual Soldier Load Guide</p>
+        <p id="explain">This guide tells the Section Commander what one of their soldiers can achieve based on the weight they're carrying.</p>
+        <p id="explain1">This guidance is based on the British Army's Role Fitness Test (RFT) requirements.</p>
+        <p id="explain2">This is only to be used on operations. Outside of operations, a Physical Training Instructor must be consulted.</p>
+    </header>
+    <div id="container">
+        <img src="img1.png" alt="Image of soldiers battling the enemy.">
+        <form name="kitlist">
+            <div id="checkboxlist">
+                <div class="col" id="col1">
+                    <input type="checkbox" onchange=addup(document.kitlist.kit) name="kit" value=4>
+                    <label>Rifle (4kg)</label><br>
+                    <input type="checkbox" onchange=addup(document.kitlist.kit) name="kit" value=5>
+                    <label>Sharpshooter (5kg)</label><br>
+                    <input type="checkbox" onchange=addup(document.kitlist.kit) name="kit" value=14>
+                    <label>GPMG (14kg)</label><br>
+                    <input type="checkbox" onchange=addup(document.kitlist.kit) name="kit" value=0.5>
+                    <label>Full Magazine (0.5kg)</label><br>
+                    <input type="checkbox" onchange=addup(document.kitlist.kit) name="kit" value=0.5>
+                    <label>Full Magazine (0.5kg)</label><br>
+                    <input type="checkbox" onchange=addup(document.kitlist.kit) name="kit" value=0.5>
+                    <label>Full Magazine (0.5kg)</label><br>
+                    <input type="checkbox" onchange=addup(document.kitlist.kit) name="kit" value=0.5>
+                    <label>Full Magazine (0.5kg)</label><br>
+                    <input type="checkbox" onchange=addup(document.kitlist.kit) name="kit" value=1>
+                    <label>Grenade (1kg)</label><br>
+                </div>
+                <div class="col" id="col2">
+                    <input type="checkbox" onchange=addup(document.kitlist.kit) name="kit" value=1>
+                    <label>Full Water Bottle (1kg)</label><br>
+                    <input type="checkbox" onchange=addup(document.kitlist.kit) name="kit" value=1>
+                    <label>Full Water Bottle (1kg)</label><br>
+                    <input type="checkbox" onchange=addup(document.kitlist.kit) name="kit" value=1>
+                    <label>Full Water Bottle (1kg)</label><br>
+                    <input type="checkbox" onchange=addup(document.kitlist.kit) name="kit" value=1>
+                    <label>Full Water Bottle (1kg)</label><br>
+                    <input type="checkbox" onchange=addup(document.kitlist.kit) name="kit" value=2>
+                    <label>Ration Pack (2kg)</label><br>
+                    <input type="checkbox" onchange=addup(document.kitlist.kit) name="kit" value=2>
+                    <label>Ration Pack (2kg)</label><br>
+                    <input type="checkbox" onchange=addup(document.kitlist.kit) name="kit"  value=6>
+                    <label>Patrol Radio (6kg)</label><br>
+                    <input type="checkbox" onchange=addup(document.kitlist.kit) name="kit" value=1>
+                    <label>Spare Radio Battery (1kg)</label><br>
+                </div>
+            </div>
+            <button id="clearbtn" type="button" onclick=uncheckall(document.kitlist.kit) value="uncheckall">Clear</button>
+            <div id="outputcontainer">
+                <p id="weightline">The overall weight the soldier is carrying is:
+                <p id="weight">0kg</p>
+                <p id="guidance">Fighting order, suitable for fire and manouevre.</p>
+            </div>
+        </form>
+    </div>
+    <script src="project6.js"></script>
+</body>
+</html>
