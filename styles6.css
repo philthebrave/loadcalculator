@@ -1,0 +1,103 @@
+* {
+    background-color: tan;
+}
+
+p, label {
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", sans-serif;
+}
+
+#guidetitle {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1.5rem auto;
+}
+
+#explain2 {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#weightline {
+    font-size: 1.2rem;
+}
+
+#weight {
+    text-decoration: underline;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#guidance {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+button {
+    width: 25%;
+    margin: 1% auto;
+    background-color: gray;
+}
+
+/* ----------------------------------------------- */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#container {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    width: 50%;
+    object-fit: contain;
+    margin-right: 1%;
+    border-style: solid;
+}
+
+form {
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+#checkboxlist {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+}
+
+#outputcontainer {
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    border-style: solid;
+}
+
+/* ----------------------------------------------- */
+
+@media (max-width: 1136px) {
+    form {
+        width: 100%;
+    }
+    #container {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    img {
+        width: 80%;
+        object-fit: contain;
+        margin: 1rem auto;
+    }
+    #checkboxlist {
+        justify-content: space-evenly;
+        font-size: 2vw;
+    }
+}
